@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'filedetector';
+
+  fileBrowseHandler(files: any): void {
+    const fileList = files.target.files;
+    console.log(fileList);
+  }
 }
